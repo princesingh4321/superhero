@@ -1,0 +1,101 @@
+body{
+    background-color: #FFFFFF;
+    margin: auto;
+    text-align: center;
+  }
+#super-hero-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: auto;
+    padding-top: 50px;
+    flex-flow: wrap;
+  }
+  
+  #image{
+    min-width: auto;
+    height: auto;
+    margin: 20px;
+  }
+  
+  #img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  #left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: right;
+    text-align: left;
+    width: auto;
+    margin: 2vh;
+  }
+  
+  #main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 25px;
+    width: 70%;
+  }
+  
+  #hero-name{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px 0;
+    background-color: darkkhaki;
+  }
+  
+  #right{
+    display: flex;
+    text-align: left;
+    justify-content:space-between;
+    margin: 10px;
+  }
+  #powerstats{
+    width: 50%;
+    margin-left: 20px;
+    align-items: right;
+    text-align: left;
+    
+  }
+  #bio{
+    width: 50%;
+    margin-left: 20px;
+  }
+  
+  #right div{
+    padding-top: 15px;
+  }
+  
+  .heading{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+
+  @media only screen and (max-width: 600px) {
+    /* adding padding to container */
+    #super-hero-container {
+      padding-block: 2rem;
+      display: block;
+    }
+    #left{
+        display: block;
+    }
+    #right{
+        display: block;
+    }
+    #image{
+        /* width: auto; */
+        width: 90%;
+        height: auto;
+        margin: 20px;
+        align-items: center;
+      }
+    
+  }
